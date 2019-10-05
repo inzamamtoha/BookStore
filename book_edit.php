@@ -6,6 +6,7 @@
  } 
 
 // connect to the database
+// mysql database for inzamam
 include ('book_db_conn.php');
 
 $title= "";
@@ -120,11 +121,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 				else {
 			   	 echo "Error: " . $sql . "<br>" . mysqli_error($db);
 				}
-			   header('location:/profile');
+			   	header('location:/profile');
 				mysqli_close($db);
-			}	
-	
-	
-    
+			}		
 }
 ?>
