@@ -4,9 +4,6 @@
  if (!isset($_SESSION['email'])) {
  		header('location:/');
  } 
-
-// connect to the database
-// mysql database for inzamam
 include ('book_db_conn.php');
 
 $title= "";
